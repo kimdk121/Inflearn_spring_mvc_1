@@ -14,3 +14,6 @@
     - 동적 HTML, HTTP API (JSON)
     - 서블릿, JSP, 스프링 MVC
   - 톰캣 (Tomcat) Jetty, Undertow
+- 시스템 구성
+  - Web Server -> WAS -> DB
+  - 정적 리소스는 Web Server가 담당하고 애플리케이션 로직은 WAS로 위임하는 이 구성이 유리
