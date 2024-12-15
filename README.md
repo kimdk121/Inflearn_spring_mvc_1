@@ -19,7 +19,9 @@
   - 정적 리소스는 Web Server가 담당하고 애플리케이션 로직은 WAS로 위임하는 이 구성이 유리
 
 ### Servlet
-
+- Client의 요청에 Web Server는 그 요청을 Web Container에 위임
+- Web Container는 각 요청에 해당하는 Servlet을 찾아서 실행
+- Servlet은 그 요청에 대한 기능을 수행한 수 결과를 Client에 반환
 
 #### Servlet Container
 - WAS는 Web Server + Web Container (Servlet Container)
