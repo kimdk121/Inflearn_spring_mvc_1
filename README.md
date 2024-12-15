@@ -27,7 +27,8 @@
 - Tomcat, Jetty 등이 Servlet Container
 - 클라이언트로 부터 HTTP 요청을 받아 서블릿 객체를 실행하고 결과를 응답으로 반환
 
-#### DispatcherServlet (모든 HTTP 요청을 중앙에서 처리하는 프론트 컨트롤러 서블릿)
+#### DispatcherServlet 
+#### 모든 HTTP 요청을 중앙에서 처리하는 프론트 컨트롤러 서블릿
 1. 클라이언트의 HTTP 요청 받음
 2. 적절한 컨트롤러로 요청을 전달
 3. 컨트롤러에서 처리된 결과를 View로 전달
