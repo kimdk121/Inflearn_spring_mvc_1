@@ -80,7 +80,8 @@ Spring MVC에서의 HTTP 요청 응답 과정
     - Cloud 서버면 일단 서버부터 늘리고 이후에 튜닝
     - Cloud 서버가 아니면 바로 튜닝
 
- 
+ ### CSR, SSR
+ - 
 
 
 
