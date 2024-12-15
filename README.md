@@ -30,9 +30,14 @@
 - 클라이언트로 부터 HTTP 요청을 받아 서블릿 객체를 실행하고 결과를 응답으로 반환
 
 #### DispatcherServlet 
-#### 모든 HTTP 요청을 중앙에서 처리하는 프론트 컨트롤러 서블릿
-1. 클라이언트의 HTTP 요청 받음
-2. 적절한 컨트롤러로 요청을 전달
-3. 컨트롤러에서 처리된 결과를 View로 전달
-4. 최종 결과를 클라이언트에게 반환
+#### Spring MVC에서 모든 HTTP 요청을 중앙에서 처리하는 프론트 컨트롤러 서블릿
+1. 클라이언트가 HTTP 요청을 전송
+2. Web Server가 Web Container (Tomcat 등) 에 요청을 전달
+3. Web Container가 DispatcherServlet에 요청을 전달
+5. DispatcherServlet이 HandlerMapping을 사용해 적절한 Controller로 요청을 전달
+6. Controller에서 요청 처리된 결과를 다시 DispatcherServlet로 전달
+7. DispatcherServlet이 ViewResolver를 통해 View를 생성
+8. DispatcherServlet은 최종 결과를 클라이언트에게 반환
+
+
 
