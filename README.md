@@ -17,3 +17,20 @@
 - 시스템 구성
   - Web Server -> WAS -> DB
   - 정적 리소스는 Web Server가 담당하고 애플리케이션 로직은 WAS로 위임하는 이 구성이 유리
+
+#### Servlet
+
+
+#### Servlet Container
+- WAS는 Web Server + Web Container (Servlet Container)
+- 자바는 웹 구현 기술로 Servlet을 사용하는데 이 Servlet을 관리하고 jsp파일을 실행할 수 있게 해주는 것이 Servlet Container
+- Tomcat, Jetty 등이 Servlet Container
+- 클라이언트로 부터 HTTP 요청을 받아 서블릿 객체를 실행하고 결과를 응답으로 반환
+
+#### DispatcherServlet
+#####모든 HTTP 요청을 중앙에서 처리하는 프론트 컨트롤러 서블릿이다
+1. 클라이언트의 HTTP 요청 받음
+2. 적절한 컨트롤러로 요청을 전달
+3. 컨트롤러에서 처리된 결과를 View로 전달
+4. 최종 결과를 클라이언트에게 반환
+
