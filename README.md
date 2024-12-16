@@ -81,7 +81,15 @@ Spring MVC에서의 HTTP 요청 응답 과정
     - Cloud 서버가 아니면 바로 튜닝
 
  ### CSR, SSR
- - 
+ - Server Side Rendering
+   - 서버에서 최종 HTML을 생성해서 클라이언트에 전달
+   - 주로 정적인 화면에 사용
+   - 관련기술 : JSP, 타임리프 -> 백엔드 개발자
+ - Client Side Rendering
+   - HTML 결과를 자바스크립트를 사용해 웹 브라우저에서 동적으로 생성해서 적용
+   - 주로 동적인 화면에 사용, 웹 환경을 마치 앱처럼 필요한 부분부분 변경할 수 있음
+   - 예) 구글 지도, Gmail, 구글 캘린더
+   - 관련기술 : React, Vue.js -> 웹 프론트엔드 개발자
 
 
 
