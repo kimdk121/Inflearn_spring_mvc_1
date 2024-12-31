@@ -109,6 +109,9 @@ Spring MVC에서의 HTTP 요청 응답 과정
 
 
 
+WEB-INF : JSP 파일들을 브라우저에서 직접 접근 못하게 함
+
+
 
 
 
