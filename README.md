@@ -111,6 +111,14 @@ Spring MVC에서의 HTTP 요청 응답 과정
 
 WEB-INF : JSP 파일들을 브라우저에서 직접 접근 못하게 함
 
+핸들러 매핑, 핸들러 어댑터
+- HandlerMapping
+  1. RequestMappingHandlerMapping : 어노테이션 기반의 컨트롤러인 @RequestMapping에서 사용
+  2. BeanNameUrlHandlerMapping : 스프링 빈의 이름으로 핸들러를 찾는다.
+- HandlerAdapter
+  1. RequestMappingHandlerAdapter : 어노테이션 기반의 컨트롤러인 @RequestMapping에서 사용
+  2. HttpRequestHandlerAdapter : HttpRequestHandler 처리
+  3. SimpleControllerHandlerAdapter : Controller 인터페이스 (어노테이션X, 과거에 사용) 처리
 
 
 
