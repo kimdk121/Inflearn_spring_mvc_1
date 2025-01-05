@@ -120,7 +120,9 @@ WEB-INF : JSP 파일들을 브라우저에서 직접 접근 못하게 함
   2. HttpRequestHandlerAdapter : HttpRequestHandler 처리
   3. SimpleControllerHandlerAdapter : Controller 인터페이스 (어노테이션X, 과거에 사용) 처리
 
-
+@PathVariable
+@GetMapping("/mapping/{userId}")
+    public String mappingPath(@PathVariable("userId") String data) {
 
 
 
