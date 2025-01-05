@@ -123,6 +123,7 @@ WEB-INF : JSP 파일들을 브라우저에서 직접 접근 못하게 함
 @PathVariable
 @GetMapping("/mapping/{userId}")
     public String mappingPath(@PathVariable("userId") String data) {
+    public String mappingPath(@PathVariable String data) {
 
 
 
