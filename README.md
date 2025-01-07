@@ -128,6 +128,12 @@ WEB-INF : JSP 파일들을 브라우저에서 직접 접근 못하게 함
 @GetMapping("/{userId}") <br>
     public String findUser(@PathVariable String userId) { <br>
 
+HttpEntity : HTTP header, body 정보를 편리하게 조회 <br>
+HttpEntity는 응답에도 사용이 가능
+- 메시지 바디 정보 직접 반환
+- 헤더 정보 포함 가능
+- view 조회 X
+
 
 
 
