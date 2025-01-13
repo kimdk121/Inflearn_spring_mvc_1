@@ -134,7 +134,7 @@ HttpEntity는 응답에도 사용이 가능
 - 헤더 정보 포함 가능
 - view 조회 X
 
-
+th:href="@{/css/bootstrap.min.css}"
 
 
 
