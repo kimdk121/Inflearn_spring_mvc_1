@@ -142,10 +142,10 @@ th:onclick="|location.href='@{/basic/items/add}'|"
 <th:text="'Welcome to our application, ' + ${user.name} + '!'"> -> <th:text="|Welcome to our application, ${user.name}!|">
 
 반복 출력 : th:each
-<tr th:each="item : ${items}">
+<'tr th:each="item : ${items}">
 
 변수 표현식 : ${...}
-<td th:text="${item.price}">10000</td>
+<'td th:text="${item.price}">10000</td>
 
 
 
