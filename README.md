@@ -134,14 +134,21 @@ HttpEntity는 응답에도 사용이 가능
 - 헤더 정보 포함 가능
 - view 조회 X
 
+## Thymeleaf
+링크 표현식 : `th:href="@{/css/bootstrap.min.css}"`
+`th:onclick="|location.href='@{/basic/items/add}'|"`
+`th:href="@{/basic/items/{itemId}(itemId=${item.id}, query='test')}"` = `http://localhost:8080/basic/items/1?query=test`
 
 
+리터럴 대체 문법 - |...|
+`<span th:text="'Welcome to our application, ' + ${user.name} + '!'">`
+-> `<span th:text="|Welcome to our application, ${user.name}!|">`
 
+반복 출력 : th:each
+`<tr th:each="item : ${items}">`
 
-
-
-
-
+변수 표현식 : ${...}
+`<td th:text="${item.price}">10000</td>`
 
 
 
