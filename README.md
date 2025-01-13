@@ -135,7 +135,7 @@ HttpEntity는 응답에도 사용이 가능
 - view 조회 X
 
 링크 표현식 : th:href="@{/css/bootstrap.min.css}"
-
+th:onclick="|location.href='@{/basic/items/add}'|"
 
 
 
