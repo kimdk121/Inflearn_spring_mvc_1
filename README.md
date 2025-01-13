@@ -138,8 +138,8 @@ HttpEntity는 응답에도 사용이 가능
 th:onclick="|location.href='@{/basic/items/add}'|"
 
 리터럴 대체 문법 - |...|
-<span th:text="'Welcome to our application, ' + ${user.name} + '!'">
-<span th:text="|Welcome to our application, ${user.name}!|">
+- <span th:text="'Welcome to our application, ' + ${user.name} + '!'">
+- <span th:text="|Welcome to our application, ${user.name}!|">
 
 
 
