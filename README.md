@@ -135,8 +135,9 @@ HttpEntity는 응답에도 사용이 가능
 - view 조회 X
 
 ## Thymeleaf
-링크 표현식 : th:href="@{/css/bootstrap.min.css}"
-th:onclick="|location.href='@{/basic/items/add}'|"
+링크 표현식 : `th:href="@{/css/bootstrap.min.css}"`
+`th:onclick="|location.href='@{/basic/items/add}'|"`
+`th:href="@{/basic/items/{itemId}(itemId=${item.id})}"`
 
 리터럴 대체 문법 - |...|
 `<span th:text="'Welcome to our application, ' + ${user.name} + '!'">`
@@ -147,7 +148,6 @@ th:onclick="|location.href='@{/basic/items/add}'|"
 
 변수 표현식 : ${...}
 `<td th:text="${item.price}">10000</td>`
-
 
 
 
