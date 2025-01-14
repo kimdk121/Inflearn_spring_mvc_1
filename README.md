@@ -155,7 +155,7 @@ Post 이후 새로고침을 하면 post를 다시 실행하게 된다. Post에 R
 
 ## RedirectAttribute
 - URL인코딩 가능
-- pathVariable
+- return 쪽에 pathVariable 사용 가능
 - 쿼리 파라미터 처리 가능 ${param.status}
 
     @PostMapping("/add")
