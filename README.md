@@ -150,8 +150,21 @@ HttpEntity는 응답에도 사용이 가능
 변수 표현식 : ${...}
 `<td th:text="${item.price}">10000</td>`
 
+## PRG (Post -> Redirect -> Get)
+Post 이후 새로고침을 하면 post를 다시 실행하게 된다. Post에 Redirect를 두게 되면 새로고침을 해도 Redirect로 가게 된다.
 
+## RedirectAttribute
+- URL인코딩 가능
+- return 쪽에 pathVariable 사용 가능
+- 쿼리 파라미터 처리 가능 ${param.status}
 
+    @PostMapping("/add")
+    public String addItemV6(Item item, RedirectAttributes redirectAttributes) {
+        Item savedItem = itemRepository.save(item);
+        redirectAttributes.addAttribute("itemId", savedItem.getId());
+        redirectAttributes.addAttribute("status", true);
+        return "redirect:/basic/items/{itemId}";
+    }
 
 
 
