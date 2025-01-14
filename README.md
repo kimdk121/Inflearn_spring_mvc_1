@@ -150,7 +150,8 @@ HttpEntity는 응답에도 사용이 가능
 변수 표현식 : ${...}
 `<td th:text="${item.price}">10000</td>`
 
-
+## PRG (Post -> Redirect -> Get)
+Post 이후 새로고침을 하면 post를 다시 실행하게 된다. Post에 Redirect를 두게 되면 새로고침을 해도 Redirect로 가게 된다.
 
 
 
